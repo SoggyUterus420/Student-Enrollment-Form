@@ -1,0 +1,154 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+}
+
+h1 {
+	font-family: 'Exo', sans-serif;
+	color:#ffffff;
+	font-size:45px;
+	text-transform:uppercase;
+	text-align: center;
+    padding-bottom: 1rem;
+}
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+} 
+
+
+
+.form{
+    width: 55vw;
+    height: 50vh;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 1.25rem 1.25rem 3.75rem #cccccc, -1.25rem -1.25rem 3.75rem #ffffff;
+}
+
+.form h2{
+    width: 30vw;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 8px;
+    transform: translate(10vw,0);
+}
+
+.form input, .form select{
+    width: 15vw;
+    height: 3.5vh;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-family: sans-serif;
+}
+
+.form select option{
+    background: rgba(0,0,0,0.8)50%;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: sans-serif; 
+}
+
+
+#name, #email, #birth, #phone, #referral, #courseTitle{
+    margin-right: 3em;
+    margin-bottom: 2em;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+.helper-details {
+    height: 37vh;
+    width: 15vw;
+    transform: translate(40vw, 0);
+    color: white;
+    border-left: 0.5px solid #ff7200;
+    margin-top: -30vh;
+    padding-left: 1rem;
+    
+}  
+
+ .helper-header {
+    text-align: center;
+    font-size: 2em;
+}
+
+.helper-text {
+     text-align: center;
+     font-size: 1.2em;
+    
+} 
+
+img{
+    width: 14vw;
+    height: 10vw;
+      
+}
+
+.btnn{
+  --primary: #fda861;
+  --secondary: #ff9239;
+  --tertiary: #ff7200;
+  cursor: pointer;
+  width: 15rem;
+  height: 2.5rem;
+  gap: 1rem;
+  font-size: 1.125em;
+  letter-spacing: 0.125rem;
+  color: #fff;
+  background: var(--primary);
+  border: 0.125rem solid var(--secondary);
+  border-radius: .75rem;
+  box-shadow: 0 8px 0 var(--secondary);
+  transform: skew(-10deg);
+  transition: all .1s ease;
+  filter: drop-shadow(0 15px 20px var(--tertiary));
+  margin-top: -10vh;
+  margin-left: 13vw;
+}
+
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+} 
+
+.btnn:active{
+  letter-spacing: 0px;
+  transform: skew(-10deg) translateY(8px);
+  box-shadow: 0 0 0 var(--tertiary);
+}
+
+#thankYouContainer, #thankYouMessage, #countdown-timer{
+   color: #ff7200;
+   font-family: Georgia, 'Times New Roman', Times, serif ;
+   text-align: center;
+}

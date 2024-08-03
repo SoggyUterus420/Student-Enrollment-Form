@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>LET'S GET YOU ENROLLED!</h1>
+        
+        <form id="enrollmentForm" class="enrollment-form" action="javascript:void(0);">
+            <div class="form">
+                <h2>Enroll In A Course!</h2>
+
+                <input type="text" id="name" placeholder="Enter Full Name Here" autocomplete="off" required>
+
+                <input type="email" id="email" placeholder="Enter Email Here" autocomplete="email" required>
+
+                <input type="date" id="birth" placeholder="dd/mm/yyyy" required>
+
+                <input type="text" id="phone" placeholder="Enter Phone Number Here" autocomplete="off" required>
+
+                <select id="courseTitle" required>
+                    <option value="" hidden>Please reselect your course</option>
+                    <option value="Higher Certificate">Higher Certificate</option>
+                    <option value="Diploma in Technology">Diploma in Technology</option>
+                    <option value="Bachelor in Technology">Bachelor in Technology</option>
+                    <option value="Bachelor of Computing">Bachelor of Computing</option>
+                </select>
+             
+                <select id="referral" required>
+                    <option hidden>How did you hear about us?</option>
+                    <option>Friend or family member</option>
+                    <option>School guidance counselor</option>
+                    <option>Facebook/ Instagram/ Twitter</option>
+                    <option>Radio/ Sign Board</option>
+                    <option>Don't remember</option>
+                </select>
+                
+                <div class="helper-details">
+                    <div class="helper-header">Personal Information</div>
+                    <br>
+                    <p class="helper-text">Let's get rolling! Please fill out the information to your left.</p>
+                    <br>
+                    <img src="giphy.webp" alt="graduation-gif">
+                </div>
+                
+                <button type="submit" class="btnn">Enroll</button>
+            </div>
+        </form>
+        
+        <div class="container" id="thankYouContainer" style="display: none;">
+            <h1 id="thankYouMessage"></h1>
+            <p id="countdown-timer"></p>
+        </div>
+
+        <script src="index.js"></script>
+    </div>
+    </body>
+    </html>
