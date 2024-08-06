@@ -1,30 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enrollment Form</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css"> <!-- CSS link to enroll -->
 </head>
 <body>
     <div class="wrapper">
         <h1>LET'S GET YOU ENROLLED!</h1>
         
-        <form id="enrollmentForm" class="enrollment-form" action="javascript:void(0);">
+        <form id="enrollmentForm" class="enrollment-form" action="javascript:void(0);"> 
             <div class="form">
                 <h2>Enroll In A Course!</h2>
+            
+                    <input type="text" id="name" placeholder="Enter Full Name Here" autocomplete="off" required>
 
-                <input type="text" id="name" placeholder="Enter Full Name Here" autocomplete="off" required>
+                    <input type="email" id="email" placeholder="Enter Email Here" autocomplete="email" required>
 
-                <input type="email" id="email" placeholder="Enter Email Here" autocomplete="email" required>
+                    <input type="date" id="birth" placeholder="dd/mm/yyyy" required>
 
-                <input type="date" id="birth" placeholder="dd/mm/yyyy" required>
-
-                <input type="text" id="phone" placeholder="Enter Phone Number Here" autocomplete="off" required>
+                    <input type="text" id="phone" placeholder="Enter Phone Number Here" autocomplete="off" required>
 
                 <select id="courseTitle" required>
-                    <option value="" hidden>Please reselect your course</option>
+                    <option value="" hidden>Reselect your course</option>
                     <option value="Higher Certificate">Higher Certificate</option>
                     <option value="Diploma in Technology">Diploma in Technology</option>
                     <option value="Bachelor in Technology">Bachelor in Technology</option>
@@ -43,7 +42,7 @@
                 <div class="helper-details">
                     <div class="helper-header">Personal Information</div>
                     <br>
-                    <p class="helper-text">Let's get rolling! Please fill out the information to your left.</p>
+                    <p class="helper-text">Let's get rolling! Please fill out the information above.</p>
                     <br>
                     <img src="giphy.webp" alt="graduation-gif">
                 </div>
@@ -57,7 +56,7 @@
             <p id="countdown-timer"></p>
         </div>
 
-        <script src="index.js"></script>
     </div>
+        <script src="index.js"></script>
     </body>
     </html>
